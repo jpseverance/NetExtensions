@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{741F03BC-45C5-489C-A5B5-A2FF7386BC19}</ProjectGuid>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>NetExtensions.PersistenceFramework</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>NetExtensions.PersistenceFramework</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.9.0, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NetExtensions.Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core, Version=2.2.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NetExtensions.Lib\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NetExtensions.Lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SQLite.NET, Version=0.21.1869.3794, Culture=neutral, PublicKeyToken=c273bd375e695f9c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NetExtensions.Lib\SQLite.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractMapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdoFactories\ParameterBuilder.cs" />
+    <Compile Include="AdoFactories\IAdoFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdoFactories\SqliteFactory.cs" />
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColumnMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Criteria.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CriteriaOperator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CriteriaTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DataMapTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaMapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MetaMapperTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdoFactories\MsSqlFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdoFactories\OleDbFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Query.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SafeReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StaleObjectException.cs" />
+    <Compile Include="TemplateMapper.cs" />
+    <Compile Include="TestObjects\Customer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\CustomerMapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\CustomerMapperTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\Order.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\OrderItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\OrderItemLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\OrderItemLoaderTests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\OrderItemMapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\OrderMapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\Person.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestObjects\Product.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="TestObjects\vssver.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NetExtensions.Models\NetExtensions.Models.csproj">
+      <Project>{2255D9B7-FE8D-464A-B62C-658D79729B99}</Project>
+      <Name>NetExtensions.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>copy "$(ProjectDir)app.config" "$(TargetPath).config"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

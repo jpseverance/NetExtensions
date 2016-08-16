@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<configuration>
+
+    <appSettings>
+        <add
+            key="DBConnection"
+            value="Integrated Security=SSPI;Initial Catalog=Northwind;Data Source=192.168.0.101"
+            />
+            
+        <add
+            key="NetExtensions.PersistenceFramework.TestObjects.Person"
+            value="NetExtensions.PersistenceFramework.TestObjects.PersonMapper"
+            />
+    </appSettings>
+
+</configuration>

@@ -1,0 +1,65 @@
+8
+
+dir
+202
+svn://localhost/Excursion/trunk/Implementation/Excursion/Lib-Source/NetExtensions
+svn://localhost
+
+
+
+2006-10-31T19:25:44.891750Z
+97
+James.Severance
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+c024975c-6368-9c43-b888-46adc996eeed
+
+NetExtensions.sln
+file
+
+
+
+
+2008-03-09T05:11:17.000000Z
+959c60c2edd72e4e4c20e90336bf0b28
+2006-10-24T03:09:45.264406Z
+91
+James.Severance
+
+NetExtensions.Collections
+dir
+
+NetExtensions.PersistenceFramework
+dir
+
+NetExtensions.Models
+dir
+
+NetExtensions.Lib
+dir
+
+NetExtensions.suo
+file
+
+
+
+
+2008-03-09T05:11:17.000000Z
+c6f3a75413a85d0ae37394e9eb8e78b3
+2006-10-31T19:25:44.891750Z
+97
+James.Severance
+has-props
+
